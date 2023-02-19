@@ -36,7 +36,7 @@ try:
     back_from_function = get_fruityvice_date(fruit_choice)
     streamlit.dataframe(back_from_function)
   
-expect URLError as e:
+except URLError as e:
   streamlit.error()
   
 import requests
